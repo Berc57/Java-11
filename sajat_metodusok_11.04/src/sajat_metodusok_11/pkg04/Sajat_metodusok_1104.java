@@ -32,6 +32,11 @@ public class Sajat_metodusok_1104 {
         return randomSzam;
     }
     
+    public static int gula(int oldal, int magas)
+    {
+        int terfogat = ((oldal * oldal) * magas) / 3;
+        return terfogat;
+    }
     
     public static void main(String[] args) {
         Scanner bill = new Scanner(System.in);
@@ -63,9 +68,19 @@ public class Sajat_metodusok_1104 {
         
         int[] tomb = new int[20];
         for(int i = 0; i < 20; i++){
-            tomb[i] = generalt;
+            tomb[i] = tartomany(also, felso);
+            System.out.print(tomb[i] + ", ");
         }
-        System.out.println(tomb);
+        System.out.println("");
+        vonal();
+        
+        System.out.print("Add meg az oldalt: ");
+        int oldal = bill.nextInt();
+        System.out.print("Add meg a magasságot: ");
+        int magas = bill.nextInt();
+        
+        System.out.println("A gúla térfogata: " + gula(oldal, magas));
+        
     }
     
 }
