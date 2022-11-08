@@ -20,7 +20,6 @@ public class Rendszaminput {
         
         System.out.print("Add meg a rendszámot: ");
         String rendszam = bill.nextLine();
-        System.out.println("A rendszám: " + rendszam);
         System.out.println("A rendszám 3 betűje: " + rendszam.substring(0, 3));
         System.out.println("A rendszám 3 száma: " + rendszam.substring(3, rendszam.length()));
         String szamokstring = rendszam.substring(3, rendszam.length());
@@ -28,8 +27,6 @@ public class Rendszaminput {
         String egy = rendszam.substring(3);
         String ketto = rendszam.substring(4);
         String harom = rendszam.substring(5);
-        String szamok = "0123456789";
-        System.out.println(egy);
         
         if(rendszam.length() == 6){
             int szam1 = Integer.parseInt(szamokstring);
